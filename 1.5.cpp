@@ -23,5 +23,7 @@ int main()
 				<< "-- happy to make your acquaintance! \n";
 			break;
 	}
+	cout << " good bye"<< endl;
 	return 0;
+
 }
