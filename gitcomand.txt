@@ -1,0 +1,20 @@
+git init
+git remote add Essen git@github.com:AAAyag/EssentialCplusplus.git
+git pull Essen
+git add -A
+git commit -m "first commit"
+git push -u Essen master
+git remote -v
+
+git checkout -- a.cpp
+
+git reset HEAD a.cpp
+git checkout a.cpp
+
+git reset --hard HEAD^
+git reset --hard HEAD^^
+git reset --hard 02d04kd4
+
+git status
+
+
