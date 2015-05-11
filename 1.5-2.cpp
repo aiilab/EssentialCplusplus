@@ -21,4 +21,5 @@ int main()
 			break;
 	}
 	cout << "pay attention to char* and char[]" <<endl;
+	cout << "i got git ,haha";
 }
