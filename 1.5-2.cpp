@@ -20,4 +20,5 @@ int main()
             cout << "my name: " << ptr_name <<endl;
 			break;
 	}
+	cout << "pay attention to char* and char[]" <<endl;
 }
