@@ -1,0 +1,3 @@
+this is for C++ file read test
+this example is from exercise 1.7
+good luck
