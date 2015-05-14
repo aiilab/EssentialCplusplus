@@ -1,0 +1,3 @@
+tom.jpg male 12
+jack.jpg male 23
+lucy.jpg female 29
