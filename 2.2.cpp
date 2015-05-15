@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 using namespace std;
 
@@ -8,21 +9,22 @@ bool calc_elements(vector<int> &vec, int pos);
 void display_elems(vector<int> &vec, const string &title, ostream &os=cout);
 int main ()
 {
+	ofstream outfile("2.2.txt", ios_base::app);
 	vector<int> pent;
 	const string title ("Pentagonal Numeric Series");
 
 	if (calc_elements (pent, 0))
-		display_elems(pent, title);
+		display_elems(pent, title, outfile);
 
 	if (calc_elements (pent, 8))
-		display_elems(pent, title);
+		display_elems(pent, title, outfile);
 
 
 	if (calc_elements (pent, 14))
-		display_elems(pent, title);
+		display_elems(pent, title, outfile);
 
 	if (calc_elements (pent, 138))
-		display_elems(pent, title);
+		display_elems(pent, title, outfile);
 }
 
 bool calc_elements (vector<int> &vec, int pos)
@@ -39,7 +41,7 @@ bool calc_elements (vector<int> &vec, int pos)
 void display_elems (vector<int> &vec, const string &title, ostream &os)
 {
 	os <<'\n' << title << "\n\t";
-	for (int  ix = 0; ix < vec.size(); ++ix)
+	for (unsigned long  ix = 0; ix < vec.size(); ++ix)
 		os << vec[ix] << ' ';
 	os << endl;
 }
